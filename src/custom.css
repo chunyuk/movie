@@ -1,0 +1,19 @@
+.moive-item{
+  margin-bottom: 10px;
+}
+
+
+.btn{
+  margin:5px;
+}
+
+.liked {
+  margin-left:20%;
+  width:60% !important;
+  margin-top:10px !important;
+}
+
+.custom-navbar{
+  margin-bottom: 10px;
+  background-color: floralwhite;
+}
