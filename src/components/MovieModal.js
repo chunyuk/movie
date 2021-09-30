@@ -1,7 +1,7 @@
 import {React , useState , useEffect , useContent, useReducer}  from "react";
 import {ButtonGroup,Row,Col,Modal,Button} from "react-bootstrap";
 import useMovieStatus from "./MovieStatus";
-const POSTER_PATH = "https://www.themoviedb.org/t/p/w220_and_h330_face";
+import {BASE_IMG_URL} from '../config';
 
 const MovieModal = ({data,likeMovie, dislikeMovie, onHide, show, setModal}) =>{
 
@@ -30,7 +30,7 @@ const MovieModal = ({data,likeMovie, dislikeMovie, onHide, show, setModal}) =>{
       <Modal.Body>
       <Row>
         <Col lg={4} md={6} sm ={6} xl={4} xxl={4}>
-          <img  src={POSTER_PATH+data.poster_path} alt={data.original_title}></img>
+          <img  src={BASE_IMG_URL+data.poster_path} alt={data.original_title}></img>
         </Col>
         <Col lg={8} md={6} sm ={6} xl={8} xxl={8}>
         <h4>Detail</h4>
