@@ -36,8 +36,6 @@ const Home = ({dislikeMovie ,likeMovie, likedMovies})=>{
     }
   }
 
-console.log("Home ==>"+JSON.stringify(modal));
-
   return (
     <Container fluid>
       <Row>
